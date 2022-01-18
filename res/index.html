@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'unsafe-inline'; script-src 'unsafe-inline'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'unsafe-inline'; script-src 'unsafe-inline'">
+    <style>
+        html {
+                height: 100%;
+        }
+        body {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+        }
+        #rpm,#speed {
+                font-size: 100px;
+                color: #66FF66
+        }
+        .label {
+                color: #66FF66
+        }
+    </style>
+    <title>Hello World!</title>
+  </head>
+  <body>
+        <div>
+            Time: <span id="time"></span>
+        </div>
+        <div>
+            <span class="label">RPM:</span> <span id="rpm"></span>
+            <div></div>
+            <span class="label">Speed:</span> <span id="speed"></span>
+        </div>
+  </body>
+</html>
